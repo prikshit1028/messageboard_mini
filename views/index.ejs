@@ -1,0 +1,18 @@
+<head>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<h1>Mini Message Board</h1>
+<ul>
+  <% messages_all.forEach(function(ele){%>
+  <li>
+    <div>
+      <p>Message: <%=ele.text%></p>
+      <p>Name: <%=ele.user%></p>
+      <p>Date: <%=ele.added%></p>
+    </div>
+  </li>
+  <br />
+
+  <% })%>
+</ul>
