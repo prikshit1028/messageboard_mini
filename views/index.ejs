@@ -3,16 +3,18 @@
 </head>
 
 <h1>Mini Message Board</h1>
-<ul>
-  <% messages_all.forEach(function(ele){%>
+<a href="/new" id="mainlink">New message</a>
+<ol>
+  <% messages_all.forEach(function(ele,index){%>
   <li>
     <div>
       <p>Message: <%=ele.text%></p>
       <p>Name: <%=ele.user%></p>
       <p>Date: <%=ele.added%></p>
     </div>
+    <a href="/message/<%=index%>">OPEN</a>
   </li>
   <br />
 
   <% })%>
-</ul>
+</ol>

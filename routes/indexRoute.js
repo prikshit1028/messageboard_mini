@@ -44,4 +44,11 @@ indexRouter.post("/new", function (req, res) {
   return res.redirect("/");
 });
 
+indexRouter.get("/message/:id", function (req, res) {
+  let idof = req.params.id;
+  let finalobj = messages[idof];
+
+  res.render("msg", { msge: finalobj });
+});
+
 module.exports = indexRouter;

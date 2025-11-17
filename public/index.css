@@ -1,6 +1,13 @@
 div {
-  border: 1px solid red;
+  background-color: rgba(215, 250, 222, 0.438);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 9px;
 }
 h1 {
   text-align: center;
+}
+
+a#mainlink {
+  margin-left: 40px;
 }
