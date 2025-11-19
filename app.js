@@ -12,7 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(assetsPath));
 app.use("/", indexRouter);
 
-app.listen(8080, function (err) {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, function (err) {
   if (err) {
     console.error(err);
   }
