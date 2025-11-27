@@ -8,11 +8,11 @@
   <% messages_all.forEach(function(ele,index){%>
   <li>
     <div>
-      <p>Message: <%=ele.text%></p>
-      <p>Name: <%=ele.user%></p>
-      <p>Date: <%=ele.added%></p>
+      <p>Message: <%=ele.msg%></p>
+      <p>Name: <%=ele.name%></p>
+      <p>Date: <%=ele.dateof%></p>
     </div>
-    <a href="/message/<%=index%>">OPEN</a>
+    <a href="/message/<%=index+1%>">OPEN</a>
   </li>
   <br />
 

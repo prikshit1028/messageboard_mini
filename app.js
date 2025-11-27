@@ -1,7 +1,8 @@
+require("dotenv").config();
+
 const express = require("express");
 const indexRouter = require("./routes/indexRoute");
 const app = express();
-
 const path = require("path");
 
 app.set("views", path.join(__dirname, "views"));
