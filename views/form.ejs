@@ -1,3 +1,7 @@
+<%if(locals.erro){%> <% erro.forEach(function(err){%>
+<li><%=err.msg%></li>
+<%})%> <%}%>
+
 <h1>Create new message</h1>
 <form method="post" accept="./new">
   <label for="authorname">Name:</label>
