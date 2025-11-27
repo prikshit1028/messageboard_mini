@@ -14,7 +14,9 @@ async function postmessage(username, usermessage) {
 
 async function getmsg(Id) {
   const numberedvalue = Number(Id);
-  const { rows } = await pool.query(`SELECT*FROM messagelist WHERE id=1`);
+  const { rows } = await pool.query(`SELECT*FROM messagelist WHERE id=($1)`, [
+    numberedvalue,
+  ]);
   return rows;
 }
 
